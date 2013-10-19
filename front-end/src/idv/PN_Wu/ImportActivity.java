@@ -6,6 +6,9 @@ import android.app.Activity;
 import android.util.Log;
 
 public class ImportActivity extends Activity {
+	
+	public static final int REQUEST_SCAN_BARCODE=0;
+	
 	private byte[][] Hash = new byte[][] {
 			{ 80, 78, 32, 87, 117 },
 			{ 87, 101, 108, 99, 111, 109, 101, 32, 116, 111, 32, 109, 121, 32,

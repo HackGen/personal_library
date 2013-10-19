@@ -8,6 +8,8 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -26,6 +28,16 @@
         </activity>
         <activity
             android:name="org.sitcon.HackGen2013.liblibrary.personal_library.IndexActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.sitcon.HackGen2013.liblibrary.personal_library.IncludeBookActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.sitcon.HackGen2013.liblibrary.personal_library.IncludeBook_OnLineActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>

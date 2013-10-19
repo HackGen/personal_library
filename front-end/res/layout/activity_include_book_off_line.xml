@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="登錄" />
+        android:text="登錄 (新增書籍)" />
 
     <ScrollView
         android:id="@+id/scrollView1"

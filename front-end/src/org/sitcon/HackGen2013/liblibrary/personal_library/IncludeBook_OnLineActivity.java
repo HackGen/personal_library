@@ -81,13 +81,13 @@ public class IncludeBook_OnLineActivity extends idv.PN_Wu.ImportActivity
 		AlertDialog.Builder dialog = new AlertDialog.Builder(this);
 		dialog.setTitle("未安裝條碼掃描APP");
 		dialog.setMessage("本程式推薦使用QuickMark Scanner, 是否立即開啟Play Store安裝?");
-		dialog.setPositiveButton("取消", new DialogInterface.OnClickListener() {
+		dialog.setNegativeButton("取消", new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 
 			}
 		});
-		dialog.setNegativeButton("確定", new DialogInterface.OnClickListener() {
+		dialog.setPositiveButton("確定", new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int which) {
 				Uri uri = Uri.parse("market://search?q=QuickMark");
 				Intent intent = new Intent(Intent.ACTION_VIEW, uri);

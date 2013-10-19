@@ -2,13 +2,15 @@ package idv.PN_Wu;
 
 import java.util.Random;
 
+import com.google.analytics.tracking.android.EasyTracker;
+
 import android.app.Activity;
 import android.util.Log;
 
 public class ImportActivity extends Activity {
-	
-	public static final int REQUEST_SCAN_BARCODE=0;
-	
+
+	public static final int REQUEST_SCAN_BARCODE = 0;
+
 	private byte[][] Hash = new byte[][] {
 			{ 80, 78, 32, 87, 117 },
 			{ 87, 101, 108, 99, 111, 109, 101, 32, 116, 111, 32, 109, 121, 32,
@@ -25,4 +27,19 @@ public class ImportActivity extends Activity {
 		Log.i(new String(Hash[0]),
 				new String(Hash[1 + (new Random().nextInt(Hash.length - 1))]));
 	}
+
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		super.onStart();
+		EasyTracker.getInstance(this).activityStart(this);
+	}
+
+	@Override
+	protected void onStop() {
+		// TODO Auto-generated method stub
+		super.onStop();
+		EasyTracker.getInstance(this).activityStop(this);
+	}
+
 }

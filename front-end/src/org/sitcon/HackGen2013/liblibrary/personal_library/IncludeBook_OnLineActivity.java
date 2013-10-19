@@ -13,7 +13,6 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.text.InputFilter;
 import android.text.method.DigitsKeyListener;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -155,16 +154,20 @@ public class IncludeBook_OnLineActivity extends idv.PN_Wu.ImportActivity
 						int count = jsonObject.getInt("count");
 						if (count > 0) {
 							final String title = jsonObject.getString("title");
-							final String author = jsonObject.getString("author");
+							final String isbn = jsonObject
+									.getString("isbn");
+							final String author = jsonObject
+									.getString("author");
 							runOnUiThread(new Runnable() {
 								public void run() {
 									progressDiglog.dismiss();
-									Toast.makeText(
+									Intent intent = new Intent(
 											getApplicationContext(),
-											String.format(
-													"title: %s\nauthor: %s",
-													title, author),
-											Toast.LENGTH_LONG).show();
+											IncludeBook_OffLineActivity.class);
+									intent.putExtra("title", title);
+									intent.putExtra("isbn", isbn);
+									intent.putExtra("author", author);
+									startActivity(intent);
 								}
 							});
 						}

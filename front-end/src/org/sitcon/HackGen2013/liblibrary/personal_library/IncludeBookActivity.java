@@ -40,6 +40,8 @@ public class IncludeBookActivity extends idv.PN_Wu.ImportActivity implements OnC
 			startActivity(intent);
 			break;
 		case R.id.button2:
+			intent = new Intent(getApplicationContext(), IncludeBook_OffLineActivity.class);
+			startActivity(intent);
 			break;
 		default:
 			break;

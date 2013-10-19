@@ -7,5 +7,6 @@
     <string name="title_activity_index">Index</string>
     <string name="title_activity_include_book">IncludeBook</string>
     <string name="title_activity_include_book_on_line">IncludeBook On-line</string>
+    <string name="title_activity_include_book__off_line">IncludeBook Off-line</string>
 
 </resources>

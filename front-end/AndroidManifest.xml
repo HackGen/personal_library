@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.sitcon.HackGen2013.liblibrary.personal_library"
+    android:installLocation="auto"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="0.0.1f0" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -15,12 +16,18 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="org.sitcon.HackGen2013.liblibrary.personal_library.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="org.sitcon.HackGen2013.liblibrary.personal_library.IndexActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

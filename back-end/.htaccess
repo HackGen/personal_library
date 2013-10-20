@@ -1,0 +1,11 @@
+DirectoryIndex index.html index.htm index.php
+RewriteEngine On
+RewriteBase /
+RewriteRule ^book_info\.json$ book_info_json.php
+RewriteRule ^book_info\.xml$ book_info_xml.php
+RewriteRule ^signin$ signin.php
+RewriteRule ^logout$ logout.php
+RewriteRule ^register$ register.php
+RewriteRule ^qrcode$ qrcode.php
+RewriteRule ^update$ update.php
+RewriteRule ^tmp\/.*$ 403.shtml [F]

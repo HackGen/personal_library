@@ -32,7 +32,7 @@
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li><a class="chinese" href="#about">關於</a></li>
-        <li><a class="chinese" href="#explore">清風翻書</a></li>
+        <li><a class="chinese" href="#explore">隨意看看</a></li>
         <li><a class="chinese" href="#contact">聯絡我們</a></li>
       </ul>
 <?php
